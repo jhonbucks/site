@@ -1958,7 +1958,7 @@ a[href*="mailto"] {
 
 .project-classic-caption {
   padding: 5px;
-  background: #6e9dbf;
+  /* background: #b4cddf; */
   transition: all 0.3s ease;
   pointer-events: none;
 }
@@ -1975,7 +1975,7 @@ a[href*="mailto"] {
 }
 
 .project-classic-title a:hover {
-  color: rgba(17, 17, 17, 0.5);
+  /* color: rgba(17, 17, 17, 0.5); */
 }
 
 .project-classic-tag {
