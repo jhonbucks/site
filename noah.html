@@ -1,290 +1,232 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Noah</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Montserrat:300%7CQuestrial"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <style>
-      .ie-panel {
-        display: none;
-        background: #212121;
-        padding: 10px 0;
-        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
-        clear: both;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-      }
-      html.ie-10 .ie-panel,
-      html.lt-ie-10 .ie-panel {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <style>
-      body {
-        background-color: #ffffff; /* Fundo branco */
-      }
-    </style>
+<head>
+  <title>Noah</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300%7CQuestrial" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <header class="page-header">
-      <!-- RD Navbar-->
-      <div class="rd-navbar-wrap position-relative">
-        <nav
-          class="rd-navbar"
-          data-layout="rd-navbar-sidebar"
-          data-device-layout="rd-navbar-sidebar"
-          data-sm-layout="rd-navbar-sidebar"
-          data-sm-device-layout="rd-navbar-sidebar"
-          data-md-layout="rd-navbar-sidebar"
-          data-md-device-layout="rd-navbar-sidebar"
-          data-lg-layout="rd-navbar-sidebar"
-          data-lg-device-layout="rd-navbar-sidebar"
-          data-xl-layout="rd-navbar-sidebar"
-          data-xl-device-layout="rd-navbar-sidebar"
-          data-xxl-layout="rd-navbar-sidebar"
-          data-xxl-device-layout="rd-navbar-sidebar"
-          data-lg-stick-up-offset="46px"
-          data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px"
-          data-lg-stick-up="true"
-          data-xl-stick-up="true"
-          data-xxl-stick-up="true"
-          data-auto-height="false"
-          data-sm-auto-height="false"
-          data-md-auto-height="false"
-          data-lg-auto-height="false"
-          data-xl-auto-height="false"
-          data-xxl-auto-height="false"
-        >
-          <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button
-                  class="rd-navbar-toggle"
-                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"
-                >
-                  <span></span>
-                </button>
-                <!-- RD Navbar Brand-->
-                <div
-  class="rd-navbar-brand"
-  style="display: flex; align-items: center; gap: 10px;"
->
-<a class="brand" href="index.html" style="display: block; margin: 0 auto; text-align: center; padding: 20px 0;">
-  <img
-    class="brand-logo-desktop"
-    src="images/logo-default-384x188.png"
-    alt=""
-    width="192"
-    height="94"
-    style="display: none;"
-  />
-  <img
-    class="brand-logo-mobile"
-    src="images/logo-default-384x130.png"
-    alt=""
-    width="192"
-    height="65"
-    style="display: block;"
-  />
-</a>
-
-<!-- Container para os botões -->
-<div class="button-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
-  <!-- Primeiro botão - Sobre mim -->
-  <a href="sobre.html" style="text-decoration: none;">
-    <button
-      class="btn btn-personalizado"
-      type="button"
-      style="
-        background-color: #6e9dbf;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        flex: 1 1 150px;
-        max-width: 300px;
-        font-size: 1rem;
-      "
-      onmouseover="this.style.backgroundColor='#546679';"
-      onmouseout="this.style.backgroundColor='#6e9dbf';"
-    >
-      <i class="bi bi-bag-fill me-1"></i>
-      Sobre mim
-    </button>
-  </a>
-
-  <!-- Segundo botão - Meus desenhos -->
-  <a href="meusdesenhos.html" style="text-decoration: none;">
-    <button
-      class="btn btn-personalizado"
-      type="button"
-      style="
-        background-color: #6e9dbf;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        flex: 1 1 150px;
-        max-width: 300px;
-        font-size: 1rem;
-      "
-      onmouseover="this.style.backgroundColor='#546679';"
-      onmouseout="this.style.backgroundColor='#6e9dbf';"
-    >
-      <i class="bi bi-bag-fill me-1"></i>
-      Meus desenhos
-    </button>
-  </a>
-
-  <a href="meuslivros.html" style="text-decoration: none;">
-    <button
-      class="btn btn-personalizado"
-      type="button"
-      style="
-        background-color: #6e9dbf;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        flex: 1 1 150px;
-        max-width: 300px;
-        font-size: 1rem;
-      "
-      onmouseover="this.style.backgroundColor='#546679';"
-      onmouseout="this.style.backgroundColor='#6e9dbf';"
-    >
-      <i class="bi bi-bag-fill me-1"></i>
-      Meus livros
-    </button>
-  </a>
-  
-</div>
-
-<!-- JavaScript para alternar visibilidade dos botões e logos -->
-<script>
-  function adjustVisibility() {
-    const desktopLogo = document.querySelector('.brand-logo-desktop');
-    const mobileLogo = document.querySelector('.brand-logo-mobile');
-    const buttonContainer = document.querySelector('.button-container');
-
-    if (window.innerWidth >= 768) {
-      // Mostrar logo desktop e esconder logo mobile
-      desktopLogo.style.display = 'block';
-      mobileLogo.style.display = 'none';
-    } else {
-      // Mostrar logo mobile e esconder logo desktop
-      desktopLogo.style.display = 'none';
-      mobileLogo.style.display = 'block';
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
     }
 
-    if (window.innerWidth <= 750) {
-      // Esconder os botões para telas menores que 750px
-      buttonContainer.style.display = 'none';
-    } else {
-      // Mostrar os botões para telas maiores que 750px
-      buttonContainer.style.display = 'flex';
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
     }
-  }
+  </style>
+</head>
 
-  // Adicionar eventos para ajustar a visibilidade no carregamento e redimensionamento
-  window.addEventListener('resize', adjustVisibility);
-  window.addEventListener('load', adjustVisibility);
-</script>
+<body>
+  <style>
+    body {
+      background-color: #ffffff;
+      /* Fundo branco */
+    }
+  </style>
 
-</div>
+  <header class="page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap position-relative">
+      <nav class="rd-navbar" data-layout="rd-navbar-sidebar" data-device-layout="rd-navbar-sidebar"
+        data-sm-layout="rd-navbar-sidebar" data-sm-device-layout="rd-navbar-sidebar" data-md-layout="rd-navbar-sidebar"
+        data-md-device-layout="rd-navbar-sidebar" data-lg-layout="rd-navbar-sidebar"
+        data-lg-device-layout="rd-navbar-sidebar" data-xl-layout="rd-navbar-sidebar"
+        data-xl-device-layout="rd-navbar-sidebar" data-xxl-layout="rd-navbar-sidebar"
+        data-xxl-device-layout="rd-navbar-sidebar" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+        data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true"
+        data-auto-height="false" data-sm-auto-height="false" data-md-auto-height="false" data-lg-auto-height="false"
+        data-xl-auto-height="false" data-xxl-auto-height="false">
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                <span></span>
+              </button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand" style="display: flex; align-items: center; gap: 10px;">
+                <a class="brand" href="index.html"
+                  style="display: block; margin: 0 auto; text-align: center; padding: 20px 0;">
+                  <img class="brand-logo-desktop" src="images/logo-default-384x188.png" alt="" width="192" height="94"
+                    style="display: none;" />
+                  <img class="brand-logo-mobile" src="images/logo-default-384x130.png" alt="" width="192" height="65"
+                    style="display: block;" />
+                </a>
 
-                
-              </div>
-              <div class="rd-navbar-nav-wrap">
-                <div class="rd-navbar-nav-container">
-                  <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active">
-                      <a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                   
+                <!-- Container para os botões -->
+                <div class="button-container"
+                  style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
+                  <!-- Primeiro botão - Sobre mim -->
+                  <a href="sobre.html" style="text-decoration: none;">
+                    <button class="btn btn-personalizado" type="button" style="
+        background-color: #6e9dbf;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        flex: 1 1 150px;
+        max-width: 300px;
+        font-size: 1rem;
+      " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                      <i class="bi bi-bag-fill me-1"></i>
+                      Sobre mim
+                    </button>
+                  </a>
 
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="meuslivros.html">Meus livros</a>
-                    </li>
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="meusdesenhos.html">Meus desenhos</a>
-                    </li>
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="sobre.html">Sobre mim</a>
-                    </li>
-                   
-                  </ul>
-                  <ul class="contacts-classic">
-                   
-                    <li>
-                      <!-- <div class="contacts-classic-title">Follow Us:</div> -->
-                      <ul class="list-inline list-social list-inline-sm">
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        
-                        
+                  <!-- Segundo botão - Meus desenhos -->
+                  <a href="meusdesenhos.html" style="text-decoration: none;">
+                    <button class="btn btn-personalizado" type="button" style="
+        background-color: #6e9dbf;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        flex: 1 1 150px;
+        max-width: 300px;
+        font-size: 1rem;
+      " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                      <i class="bi bi-bag-fill me-1"></i>
+                      Meus desenhos
+                    </button>
+                  </a>
 
-                      </ul>
-                    </li>
-                  </ul>
+                  <a href="meuslivros.html" style="text-decoration: none;">
+                    <button class="btn btn-personalizado" type="button" style="
+        background-color: #6e9dbf;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        flex: 1 1 150px;
+        max-width: 300px;
+        font-size: 1rem;
+      " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                      <i class="bi bi-bag-fill me-1"></i>
+                      Meus livros
+                    </button>
+                  </a>
+
                 </div>
+
+                <!-- JavaScript para alternar visibilidade dos botões e logos -->
+                <script>
+                  function adjustVisibility() {
+                    const desktopLogo = document.querySelector('.brand-logo-desktop');
+                    const mobileLogo = document.querySelector('.brand-logo-mobile');
+                    const buttonContainer = document.querySelector('.button-container');
+
+                    if (window.innerWidth >= 768) {
+                      // Mostrar logo desktop e esconder logo mobile
+                      desktopLogo.style.display = 'block';
+                      mobileLogo.style.display = 'none';
+                    } else {
+                      // Mostrar logo mobile e esconder logo desktop
+                      desktopLogo.style.display = 'none';
+                      mobileLogo.style.display = 'block';
+                    }
+
+                    if (window.innerWidth <= 750) {
+                      // Esconder os botões para telas menores que 750px
+                      buttonContainer.style.display = 'none';
+                    } else {
+                      // Mostrar os botões para telas maiores que 750px
+                      buttonContainer.style.display = 'flex';
+                    }
+                  }
+
+                  // Adicionar eventos para ajustar a visibilidade no carregamento e redimensionamento
+                  window.addEventListener('resize', adjustVisibility);
+                  window.addEventListener('load', adjustVisibility);
+                </script>
+
+              </div>
+
+
+            </div>
+            <div class="rd-navbar-nav-wrap">
+              <div class="rd-navbar-nav-container">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item active">
+                    <a class="rd-nav-link" href="index.html">Home</a>
+                  </li>
+
+
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="meuslivros.html">Meus livros</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="meusdesenhos.html">Meus desenhos</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="sobre.html">Sobre mim</a>
+                  </li>
+
+                </ul>
+                <ul class="contacts-classic">
+
+                  <li>
+                    <!-- <div class="contacts-classic-title">Follow Us:</div> -->
+                    <ul class="list-inline list-social list-inline-sm">
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+
+
+
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    
-    <div>
-      <section
-        class="section section-full section-xl bg-default text-md-center"
-        id="sobre"
-      >
-      
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <section class="section section-full section-xl bg-default text-md-center" id="sobre">
+
       <div style="margin: 0 40px;">
-        <div class="container" >
+        <div class="container">
           <h2 style="margin-top: 30px;">
             <span class="d-inline-block wow fadeInLeft">Noah </span>
             <span class="text-primary d-inline-block wow fadeInRight">e o Senhor das Almas</span>
             <br>
-            <a
-            href="#sobrehistoria"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+            <a href="#sobrehistoria" style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -293,23 +235,14 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              Sobre a história
-            </button>
-          </a>
-          
-          <a
-            href="#digital"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                Sobre a história
+              </button>
+            </a>
+
+            <a href="#digital" style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -318,23 +251,14 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              Livro Digital
-            </button>
-          </a>
-          
-          <a
-            href="#impresso"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                Livro Digital
+              </button>
+            </a>
+
+            <a href="#impresso" style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -343,23 +267,14 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              Livro Impresso
-            </button>
-          </a>
-          
-          <a
-            href="#trilha"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                Livro Impresso
+              </button>
+            </a>
+
+            <a href="#trilha" style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -368,23 +283,14 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              Trilha Sonora
-            </button>
-          </a>
-          
-          <a
-            href="#video"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                Trilha Sonora
+              </button>
+            </a>
+
+            <a href="#video" style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -393,45 +299,49 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              Vídeo
-            </button>
-          </a>
-          
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                Vídeo
+              </button>
+            </a>
+
           </h2> <br>
-          
-      
-          
+
+
+
           <section id="sobrehistoria">
             <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-              <img src="images/banner5.png" alt="The Art Book" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-            </div> 
-            <div class="row row-30 justify-content-center" style="text-align: center; "><h2 style="margin-top: 30px; ">
-              <span class="d-inline-block wow fadeInLeft">Sobre a</span>
-              <span class="text-primary d-inline-block wow fadeInRight">história</span>
-            </h2> </div><br>
-          
+              <img src="images/banner5.png" alt="The Art Book"
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+            </div>
+            <div class="row row-30 justify-content-center" style="text-align: center; ">
+              <h2 style="margin-top: 30px; ">
+                <span class="d-inline-block wow fadeInLeft">Sobre a</span>
+                <span class="text-primary d-inline-block wow fadeInRight">história</span>
+              </h2>
+            </div><br>
+
             <div style="font-size: 1.1rem; text-align: left;">
-              
-              <p class="wow fadeInRight" >
-                Em um mundo onde a escuridão não é apenas uma sombra, mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no povoado de Nortreus virar de cabeça para baixo quando descobre a verdade sobre a tragédia que moldou seu passado. Criado por seu avô, ele embarca em uma jornada épica ao lado de sua destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser consumido pela obsessão de escapar da mortalidade às custas de vidas inocentes. <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c" ></span>
+
+              <p class="wow fadeInRight">
+                Em um mundo onde a escuridão não é apenas uma sombra, mas um inimigo voraz, Noah Stolk, um jovem de 14
+                anos, vê sua vida tranquila no povoado de Nortreus virar de cabeça para baixo quando descobre a verdade
+                sobre a tragédia que moldou seu passado. Criado por seu avô, ele embarca em uma jornada épica ao lado de
+                sua destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles enfrentam a ameaça sombria do
+                Senhor das Almas, Gregor, um ser consumido pela obsessão de escapar da mortalidade às custas de vidas
+                inocentes. <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c"></span>
               </p> <br>
-              <p class="wow fadeInRight" >
-                Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que confrontar não apenas forças malignas, mas também os segredos de sua própria linhagem. Com desafios mortais à espreita em florestas proibidas e cavernas sombrias, e aliados improváveis ao longo do caminho, "Noah e o Senhor das Almas" é uma história emocionante sobre perda, amizade e a busca incansável por justiça. <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c" ></span>
+              <p class="wow fadeInRight">
+                Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que confrontar não apenas forças
+                malignas, mas também os segredos de sua própria linhagem. Com desafios mortais à espreita em florestas
+                proibidas e cavernas sombrias, e aliados improváveis ao longo do caminho, "Noah e o Senhor das Almas" é
+                uma história emocionante sobre perda, amizade e a busca incansável por justiça. <span
+                  style="font-size: 1.4rem; font-weight: bold; color:#2c648c"></span>
               </p> <br>
               <div style="text-align: center; margin: 0 20px;">
-                <a
-                href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
+                  style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -440,23 +350,16 @@
                     font-size: 1.2rem; 
                     border-radius: 5px;
                     margin-right: 20px;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  COMPRAR AGORA
-                </button>
-              </a>
-              
-              <a
-                href="https://drive.google.com/file/d/1l08M4ZY2tYSw-hhDQDjXaV7ocJj00fyB/view"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    COMPRAR AGORA
+                  </button>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1l08M4ZY2tYSw-hhDQDjXaV7ocJj00fyB/view"
+                  style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -464,51 +367,52 @@
                     padding: 15px 25px; 
                     font-size: 1.2rem; 
                     border-radius: 5px;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  LEIA AS PRIMEIRAS PÁGINAS
-                </button>
-              </a>
-              <br><br>
-            </div>
-              <p class="wow fadeInRight" >
-                <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c" >Prepare-se para ser transportado a um universo onde a luz brilha mais intensamente quando confronta as trevas. Você está pronto para seguir Noah nessa batalha épica que vai mudar o destino de todos? </span> 
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    LEIA AS PRIMEIRAS PÁGINAS
+                  </button>
+                </a>
+                <br><br>
+              </div>
+              <p class="wow fadeInRight">
+                <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c">Prepare-se para ser transportado a um
+                  universo onde a luz brilha mais intensamente quando confronta as trevas. Você está pronto para seguir
+                  Noah nessa batalha épica que vai mudar o destino de todos? </span>
 
-                
+
               </p> <br>
-              <p class="wow fadeInRight" >
+              <p class="wow fadeInRight">
                 Um livro que vai capturar seu coração desde a primeira página.
 
-                
+
               </p> <br>
-            </section>
-        <section id="digital">
-          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-            <img src="images/banner5.png" alt="The Art Book" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-          </div> 
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-9 col-md-5 cube-classic-wrap">
-              <span class="d-inline-block wow fadeInLeft"><img src="images/capa2.png" alt="" /> </span>
-              
-            
+          </section>
+          <section id="digital">
+            <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+              <img src="images/banner5.png" alt="The Art Book"
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
             </div>
-            
-            <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;" >
-             
-              <p class="wow fadeInRight" >
+            <div class="row row-30 justify-content-center">
+              <div class="col-sm-9 col-md-5 cube-classic-wrap">
+                <span class="d-inline-block wow fadeInLeft"><img src="images/capa2.png" alt="" /> </span>
+
+
+              </div>
+
+              <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;">
+
+                <p class="wow fadeInRight">
                 <h2 style="margin-top: 10px; font-size: 1.8rem">
                   <span class="d-inline-block wow fadeInLeft">Livro</span>
                   <span class="text-primary d-inline-block wow fadeInRight">Digital</span>
-                </h2> 
+                </h2>
                 <span style="font-weight: bold;">Gênero:</span>
                 Fantasia -
                 Aventura
                 <br>
                 <span style="font-weight: bold;">Páginas:</span>
-               67 
+                67
                 <br>
                 <span style="font-weight: bold;">Formato:</span>
                 Digital (compatível com leitores de PDF).
@@ -519,14 +423,9 @@
                 Computadores -
                 Leitores de eBook (como Kindle e Kobo, desde que suportem o formato PDF).
                 <br>
-                <a
-                href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
+                  style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -535,73 +434,65 @@
                     font-size: 1.2rem; 
                     border-radius: 5px;
                     margin-right: 20px;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  COMPRAR AGORA
-                </button>
-              </a>
-                
-                
-                
-                
-               
-              </p> <br>
-            
-              
-            </div> 
-             
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    COMPRAR AGORA
+                  </button>
+                </a>
+
+
+
+
+
+                </p> <br>
+
+
+              </div>
+
             </div>
           </section>
           <section id="impresso">
             <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-              <img src="images/banner5.png" alt="The Art Book" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-            </div> 
+              <img src="images/banner5.png" alt="The Art Book"
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+            </div>
             <div class="row row-30 justify-content-center">
               <div class="col-sm-9 col-md-5 cube-classic-wrap">
                 <span class="d-inline-block wow fadeInLeft"><img src="images/capa.png" alt="" /> </span>
-                
-              
+
+
               </div>
-              
-              <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;" >
-               
-                <p class="wow fadeInRight" >
-                  <h2 style="margin-top: 10px; font-size: 1.8rem">
-                    <span class="d-inline-block wow fadeInLeft">Livro</span>
-                    <span class="text-primary d-inline-block wow fadeInRight">Impresso</span>
-                  </h2> 
-                  <span style="font-weight: bold;">Gênero:</span>
-                  Fantasia -
-                  Aventura
-                  <br>
-                  <span style="font-weight: bold;">Páginas:</span>
-                 74 
-                  <br>
-                  <span style="font-weight: bold;">Formato:</span>
-                  Impresso
-                  <br>
-                  <span style="font-weight: bold;"> Tipo de capa:</span>
-                  Capa Comum
-                  <br>
-                  <span style="font-weight: bold;"> Dimensões do Livro:</span>
-                  Altura: 21 cm 
-Largura: 14,8 cm
-                  <br>
-                  <span style="font-weight: bold;"> Tipo de Papel:</span>
-                  Offset
-                  <br>
-                  <a
-                href="#"
-                  onclick="return false;"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+
+              <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;">
+
+                <p class="wow fadeInRight">
+                <h2 style="margin-top: 10px; font-size: 1.8rem">
+                  <span class="d-inline-block wow fadeInLeft">Livro</span>
+                  <span class="text-primary d-inline-block wow fadeInRight">Impresso</span>
+                </h2>
+                <span style="font-weight: bold;">Gênero:</span>
+                Fantasia -
+                Aventura
+                <br>
+                <span style="font-weight: bold;">Páginas:</span>
+                74
+                <br>
+                <span style="font-weight: bold;">Formato:</span>
+                Impresso
+                <br>
+                <span style="font-weight: bold;"> Tipo de capa:</span>
+                Capa Comum
+                <br>
+                <span style="font-weight: bold;"> Dimensões do Livro:</span>
+                Altura: 21 cm
+                Largura: 14,8 cm
+                <br>
+                <span style="font-weight: bold;"> Tipo de Papel:</span>
+                Offset
+                <br>
+                <a href="#" onclick="return false;" style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -610,50 +501,50 @@ Largura: 14,8 cm
                     font-size: 1.2rem; 
                     border-radius: 5px;
                     margin-right: 20px;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  ESGOTADO
-                </button>
-              </a>
-                
-                  
-                  
-                  
-                  
-                  
-                 
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    ESGOTADO
+                  </button>
+                </a>
+
+
+
+
+
+
+
                 </p> <br>
-              
-                
-              </div> 
-               
+
+
               </div>
-            </section>
-            
-             
-            <section id="trilha">
-              <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-                <img src="images/banner5.png" alt="The Art Book" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-              </div> 
+
+            </div>
+          </section>
+
+
+          <section id="trilha">
+            <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+              <img src="images/banner5.png" alt="The Art Book"
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+            </div>
             <h2 style="margin-top: 30px;">
               <span class="d-inline-block wow fadeInLeft">Trilha sonora</span>
               <span class="text-primary d-inline-block wow fadeInRight">exclusiva!</span>
             </h2> <br>
             <div style="font-size: 1.1rem; text-align: left;">
-              <p class="wow fadeInRight" >
-                Transforme sua leitura em uma experiência inesquecível! Imagine mergulhar na história de Noah e o Senhor das Almas enquanto cada capítulo ganha vida com uma trilha sonora feita especialmente para ele.  De momentos de mistério e emoção a batalhas épicas e recomeços cheios de esperança, cada faixa da soundtrack acompanha o ritmo da narrativa, tornando a aventura ainda mais envolvente.   <span style="font-size: 1.4rem; font-weight: bold; color:#2c648c" >Aperte o play e viva essa jornada como nunca antes!</span>
-              </p> <br> </div>
-              <a
-                href="https://music.youtube.com/playlist?list=PLx8pfCgphZXmLTHzG78blHcLobHQCz385&si=v3-bhujGSvUc3SC9"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+              <p class="wow fadeInRight">
+                Transforme sua leitura em uma experiência inesquecível! Imagine mergulhar na história de Noah e o Senhor
+                das Almas enquanto cada capítulo ganha vida com uma trilha sonora feita especialmente para ele. De
+                momentos de mistério e emoção a batalhas épicas e recomeços cheios de esperança, cada faixa da
+                soundtrack acompanha o ritmo da narrativa, tornando a aventura ainda mais envolvente. <span
+                  style="font-size: 1.4rem; font-weight: bold; color:#2c648c">Aperte o play e viva essa jornada como
+                  nunca antes!</span>
+              </p> <br>
+            </div>
+            <a href="https://music.youtube.com/playlist?list=PLx8pfCgphZXmLTHzG78blHcLobHQCz385&si=v3-bhujGSvUc3SC9"
+              style="text-decoration: none;">
+              <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -662,59 +553,57 @@ Largura: 14,8 cm
                     font-size: 1.2rem; 
                     border-radius: 5px;
                     margin-right: 20px;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  OUÇA AGORA
-                </button>
-              </a>
-              
-              <div class="row row-30 justify-content-center">
-                <div class="col-sm-9 col-md-5 cube-classic-wrap">
-                  <span class="d-inline-block wow fadeInLeft"><img src="images/ot.png" alt="" /> </span>
-                  
-                
-                </div>
-                
-                <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;" >
-                 
-                  <span class="d-inline-block wow fadeInLeft"><img src="images/ot2.png" alt="" /> </span><br>
-                
-                  
-                </div> 
-              
-                </div><br>
-                <div style="text-align: center; margin:  20px; margin-bottom:  20px;">
-               
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                onmouseout="this.style.backgroundColor='#6e9dbf';">
+                <i class="bi bi-bag-fill me-1"></i>
+                OUÇA AGORA
+              </button>
+            </a>
+
+            <div class="row row-30 justify-content-center">
+              <div class="col-sm-9 col-md-5 cube-classic-wrap">
+                <span class="d-inline-block wow fadeInLeft"><img src="images/ot.png" alt="" /> </span>
+
+
+              </div>
+
+              <div class="col-md-7 col-lg-6 col-xl-5" style="font-size: 1.1rem; text-align: left;">
+
+                <span class="d-inline-block wow fadeInLeft"><img src="images/ot2.png" alt="" /> </span><br>
+
+
+              </div>
+
+            </div><br>
+            <div style="text-align: center; margin:  20px; margin-bottom:  20px;">
+
             </div>
             <br>
             <section id="video">
               <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-                <img src="images/banner5.png" alt="The Art Book" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-              </div> 
-              <div class="row row-30 justify-content-center" style="text-align: center; ">
-                
-                <iframe width="800" height="453" src="https://www.youtube.com/embed/TbypwQxNwaY?mute=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="images/banner5.png" alt="The Art Book"
+                  style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
               </div>
-           
-           
-              
-    
-    
-            </div>
-             <br>
-                  
-    
-            <a
-            href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+              <div class="row row-30 justify-content-center" style="text-align: center; ">
+
+                <iframe width="800" height="453"
+                  src="https://www.youtube.com/embed/TbypwQxNwaY?mute=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+
+
+
+
+
+        </div>
+        <br>
+
+
+        <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
+          style="text-decoration: none;">
+          <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -723,37 +612,31 @@ Largura: 14,8 cm
                 font-size: 1.2rem; 
                 border-radius: 5px;
                 margin-right: 20px;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              COMPRAR AGORA
-            </button>
-          </a> <br><br>
-          </section>
-          </div>
-          </div>
-        </section>
-        
-        </div>
-        
-       
-        
-      </section>
-    </div>
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+            <i class="bi bi-bag-fill me-1"></i>
+            COMPRAR AGORA
+          </button>
+        </a> <br><br>
+    </section>
+  </div>
+  </div>
+  </section>
 
-      <!-- Page Footer-->
-      <footer
-        class="section footer-classic section-full section-full-1 section-sm section-inset-2 bg-gray-3 context-dark text-md-center"
-        id="contacts"
-        style="background-color: #2c648c"
-      >
-        <div class="container">
-          <div class="footer-classic-list-social wow fadeInUp">
-            <ul class="list-inline list-social list-inline-sm">
-              <li
-                style="
+  </div>
+
+
+
+  </section>
+  </div>
+
+  <!-- Page Footer-->
+  <footer
+    class="section footer-classic section-full section-full-1 section-sm section-inset-2 bg-gray-3 context-dark text-md-center"
+    id="contacts" style="background-color: #2c648c">
+    <div class="container">
+      <div class="footer-classic-list-social wow fadeInUp">
+        <ul class="list-inline list-social list-inline-sm">
+          <li style="
                   border: 2px solid white;
                   border-radius: 50%;
                   display: inline-flex;
@@ -761,16 +644,11 @@ Largura: 14,8 cm
                   justify-content: center;
                   width: 50px;
                   height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-youtube"
-                  href="https://www.youtube.com/@jhonbucks"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-              <li
-                style="
+                ">
+            <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+          <li style="
                   border: 2px solid white;
                   border-radius: 50%;
                   display: inline-flex;
@@ -778,16 +656,11 @@ Largura: 14,8 cm
                   justify-content: center;
                   width: 50px;
                   height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-facebook"
-                  href="https://www.facebook.com/jhonbucksarte"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-              <li
-                style="
+                ">
+            <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+          <li style="
                   border: 2px solid white;
                   border-radius: 50%;
                   display: inline-flex;
@@ -795,33 +668,23 @@ Largura: 14,8 cm
                   justify-content: center;
                   width: 50px;
                   height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-instagram"
-                  href="https://www.instagram.com/jhonbucks"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <p
-            class="rights wow fadeInUp"
-            style="color: white; text-decoration: none; border: none"
-          >
-            <span>&copy;&nbsp; </span><span class="copyright-year"></span
-            ><span>&nbsp;</span><span>Jhon Bucks</span><span>.&nbsp;</span
-            ><span>Todos os direitos reservados.</span
-            ><br />Design&nbsp;by&nbsp;<a
-              href="https://www.templatemonster.com/"
-              >ZiboO Studios</a
-            >
-          </p>
-        </div>
-      </footer>
+                ">
+            <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="rights wow fadeInUp" style="color: white; text-decoration: none; border: none">
+        <span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Jhon
+          Bucks</span><span>.&nbsp;</span><span>Todos os direitos reservados.</span><br />Design&nbsp;by&nbsp;<a
+          href="https://www.templatemonster.com/">ZiboO Studios</a>
+      </p>
     </div>
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

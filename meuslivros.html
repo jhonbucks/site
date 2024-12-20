@@ -1,124 +1,84 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Meus Livros</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Montserrat:300%7CQuestrial"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <style>
-      .ie-panel {
-        display: none;
-        background: #212121;
-        padding: 10px 0;
-        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
-        clear: both;
-        text-align: center;
-        position: relative;
-        z-index: 1;
-      }
-      html.ie-10 .ie-panel,
-      html.lt-ie-10 .ie-panel {
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <style>
-      body {
-        background-color: #ffffff; /* Fundo branco */
-      }
-    </style>
+<head>
+  <title>Meus Livros</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300%7CQuestrial" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <header class="page-header" >
-      <!-- RD Navbar-->
-      <div class="rd-navbar-wrap position-relative">
-        <nav
-          class="rd-navbar"
-          data-layout="rd-navbar-sidebar"
-          data-device-layout="rd-navbar-sidebar"
-          data-sm-layout="rd-navbar-sidebar"
-          data-sm-device-layout="rd-navbar-sidebar"
-          data-md-layout="rd-navbar-sidebar"
-          data-md-device-layout="rd-navbar-sidebar"
-          data-lg-layout="rd-navbar-sidebar"
-          data-lg-device-layout="rd-navbar-sidebar"
-          data-xl-layout="rd-navbar-sidebar"
-          data-xl-device-layout="rd-navbar-sidebar"
-          data-xxl-layout="rd-navbar-sidebar"
-          data-xxl-device-layout="rd-navbar-sidebar"
-          data-lg-stick-up-offset="46px"
-          data-xl-stick-up-offset="46px"
-          data-xxl-stick-up-offset="46px"
-          data-lg-stick-up="true"
-          data-xl-stick-up="true"
-          data-xxl-stick-up="true"
-          data-auto-height="false"
-          data-sm-auto-height="false"
-          data-md-auto-height="false"
-          data-lg-auto-height="false"
-          data-xl-auto-height="false"
-          data-xxl-auto-height="false"
-        >
-          <div class="rd-navbar-main-outer">
-            <div class="rd-navbar-main">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button
-                  class="rd-navbar-toggle"
-                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"
-                >
-                  <span></span>
-                </button>
-                <!-- RD Navbar Brand-->
-                <div
-                class="rd-navbar-brand"
-                style="display: flex; align-items: center; gap: 10px;"
-              >
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: #ffffff;
+      /* Fundo branco */
+    }
+  </style>
+
+  <header class="page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap position-relative">
+      <nav class="rd-navbar" data-layout="rd-navbar-sidebar" data-device-layout="rd-navbar-sidebar"
+        data-sm-layout="rd-navbar-sidebar" data-sm-device-layout="rd-navbar-sidebar" data-md-layout="rd-navbar-sidebar"
+        data-md-device-layout="rd-navbar-sidebar" data-lg-layout="rd-navbar-sidebar"
+        data-lg-device-layout="rd-navbar-sidebar" data-xl-layout="rd-navbar-sidebar"
+        data-xl-device-layout="rd-navbar-sidebar" data-xxl-layout="rd-navbar-sidebar"
+        data-xxl-device-layout="rd-navbar-sidebar" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+        data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true"
+        data-auto-height="false" data-sm-auto-height="false" data-md-auto-height="false" data-lg-auto-height="false"
+        data-xl-auto-height="false" data-xxl-auto-height="false">
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                <span></span>
+              </button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand" style="display: flex; align-items: center; gap: 10px;">
                 <!-- Logo da marca -->
-                <a class="brand" href="index.html" style="display: block; margin: 0 auto; text-align: center; padding: 20px 0;">
-                  <img
-                    class="brand-logo-desktop"
-                    src="images/logo-default-384x188.png"
-                    alt=""
-                    width="192"
-                    height="94"
-                    style="display: none;"
-                  />
-                  <img
-                    class="brand-logo-mobile"
-                    src="images/logo-default-384x130.png"
-                    alt=""
-                    width="192"
-                    height="65"
-                    style="display: block;"
-                  />
+                <a class="brand" href="index.html"
+                  style="display: block; margin: 0 auto; text-align: center; padding: 20px 0;">
+                  <img class="brand-logo-desktop" src="images/logo-default-384x188.png" alt="" width="192" height="94"
+                    style="display: none;" />
+                  <img class="brand-logo-mobile" src="images/logo-default-384x130.png" alt="" width="192" height="65"
+                    style="display: block;" />
                 </a>
-                
+
                 <!-- Container para os botões -->
-                <div class="button-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
+                <div class="button-container"
+                  style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
                   <!-- Primeiro botão - Sobre mim -->
-                 
-                
+
+
                   <!-- Segundo botão - Meus desenhos -->
                   <a href="meusdesenhos.html" style="text-decoration: none;">
-                    <button
-                      class="btn btn-personalizado"
-                      type="button"
-                      style="
+                    <button class="btn btn-personalizado" type="button" style="
                         background-color: #6e9dbf;
                         color: #ffffff;
                         border: none;
@@ -128,21 +88,16 @@
                         flex: 1 1 150px;
                         max-width: 300px;
                         font-size: 1rem;
-                      "
-                      onmouseover="this.style.backgroundColor='#546679';"
-                      onmouseout="this.style.backgroundColor='#6e9dbf';"
-                    >
+                      " onmouseover="this.style.backgroundColor='#546679';"
+                      onmouseout="this.style.backgroundColor='#6e9dbf';">
                       <i class="bi bi-bag-fill me-1"></i>
                       Meus desenhos
                     </button>
                   </a>
-                
+
                   <!-- Terceiro botão - Meus Livros -->
                   <a href="sobre.html" style="text-decoration: none;">
-                    <button
-                      class="btn btn-personalizado"
-                      type="button"
-                      style="
+                    <button class="btn btn-personalizado" type="button" style="
                         background-color: #6e9dbf;
                         color: #ffffff;
                         border: none;
@@ -152,23 +107,21 @@
                         flex: 1 1 150px;
                         max-width: 300px;
                         font-size: 1rem;
-                      "
-                      onmouseover="this.style.backgroundColor='#546679';"
-                      onmouseout="this.style.backgroundColor='#6e9dbf';"
-                    >
+                      " onmouseover="this.style.backgroundColor='#546679';"
+                      onmouseout="this.style.backgroundColor='#6e9dbf';">
                       <i class="bi bi-bag-fill me-1"></i>
                       Sobre mim
                     </button>
                   </a>
                 </div>
-                
+
                 <!-- JavaScript para alternar visibilidade dos botões e logos -->
                 <script>
                   function adjustVisibility() {
                     const desktopLogo = document.querySelector('.brand-logo-desktop');
                     const mobileLogo = document.querySelector('.brand-logo-mobile');
                     const buttonContainer = document.querySelector('.button-container');
-                
+
                     if (window.innerWidth >= 768) {
                       // Mostrar logo desktop e esconder logo mobile
                       desktopLogo.style.display = 'block';
@@ -178,7 +131,7 @@
                       desktopLogo.style.display = 'none';
                       mobileLogo.style.display = 'block';
                     }
-                
+
                     if (window.innerWidth <= 750) {
                       // Esconder os botões para telas menores que 750px
                       buttonContainer.style.display = 'none';
@@ -187,96 +140,95 @@
                       buttonContainer.style.display = 'flex';
                     }
                   }
-                
+
                   // Adicionar eventos para ajustar a visibilidade no carregamento e redimensionamento
                   window.addEventListener('resize', adjustVisibility);
                   window.addEventListener('load', adjustVisibility);
                 </script>
-                
-              </div>
-              
-              </div>
-              <div class="rd-navbar-nav-wrap">
-                <div class="rd-navbar-nav-container">
-                  <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active">
-                      <a class="rd-nav-link" href="index.html">Home</a>
-                    </li>
-                   
 
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="meuslivros.html">Meus livros</a>
-                    </li>
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="meusdesenhos.html">Meus desenhos</a>
-                    </li>
-                    <li class="rd-nav-item">
-                      <a class="rd-nav-link" href="sobre.html">Sobre mim</a>
-                    </li>
-                   
-                  </ul>
-                  <ul class="contacts-classic">
-                   
-                    <li>
-                      <!-- <div class="contacts-classic-title">Follow Us:</div> -->
-                      <ul class="list-inline list-social list-inline-sm">
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        <li style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
-                          <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks" style="color: white; text-decoration: none; border: none;"></a>
-                        </li>
-                        
-                        
+              </div>
 
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="rd-navbar-nav-wrap">
+              <div class="rd-navbar-nav-container">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item active">
+                    <a class="rd-nav-link" href="index.html">Home</a>
+                  </li>
+
+
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="meuslivros.html">Meus livros</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="meusdesenhos.html">Meus desenhos</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="sobre.html">Sobre mim</a>
+                  </li>
+
+                </ul>
+                <ul class="contacts-classic">
+
+                  <li>
+                    <!-- <div class="contacts-classic-title">Follow Us:</div> -->
+                    <ul class="list-inline list-social list-inline-sm">
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+                      <li
+                        style="border: 2px solid white; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;">
+                        <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks"
+                          style="color: white; text-decoration: none; border: none;"></a>
+                      </li>
+
+
+
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <br>
-<div >
+        </div>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <div>
 
-      <section
-        class="section section-full section-xl bg-default text-md-center"
-        id="sobre"
-      >
+    <section class="section section-full section-xl bg-default text-md-center" id="sobre">
       <div style="margin: 0 20px;">
         <div class="container">
           <h2 style="margin-top: 30px;">
             <span class="d-inline-block wow fadeInLeft">Meus</span>
             <span class="text-primary d-inline-block wow fadeInRight">livros</span>
-          </h2>  <br>
+          </h2> <br>
           <section id="artbookdigital">
             <div class="row row-30 justify-content-center">
               <div class="col-sm-9 col-md-5 cube-classic-wrap">
                 <span class="d-inline-block wow fadeInLeft"><img src="images/noaaah.png" alt="" /> </span>
-                <p class="wow fadeInRight" >
-                  <h2 style="margin-top: 10px; font-size: 1.8rem">
-                    <span class="d-inline-block wow fadeInLeft">Noah e o </span>
-                    <span class="text-primary d-inline-block wow fadeInRight">Senhor das Almas</span>
-                  </h2> 
-                  
-                  Em um mundo onde a escuridão não é apenas uma sombra, mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no povoado de Nortreus....
-                  
-                  <br> <br>
-                  <a
-                  href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
-                  style="text-decoration: none;"
-                >
-                  <button
-                    class="btn btn-personalizado flex-shrink-0"
-                    type="button"
-                    style="
+                <p class="wow fadeInRight">
+                <h2 style="margin-top: 10px; font-size: 1.8rem">
+                  <span class="d-inline-block wow fadeInLeft">Noah e o </span>
+                  <span class="text-primary d-inline-block wow fadeInRight">Senhor das Almas</span>
+                </h2>
+
+                Em um mundo onde a escuridão não é apenas uma sombra, mas um inimigo voraz, Noah Stolk, um jovem de 14
+                anos, vê sua vida tranquila no povoado de Nortreus....
+
+                <br> <br>
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
+                  style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                       background-color: #6e9dbf; 
                       color: white; 
                       border: none; 
@@ -285,22 +237,14 @@
                       font-size: 0.8rem; 
                       height: auto; 
                       width: auto;
-                    "
-                    onmouseover="this.style.backgroundColor='#546679';"
-                    onmouseout="this.style.backgroundColor='#6e9dbf';"
-                  >
+                    " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
                     <i class="bi bi-bag-fill me-1"></i>
                     COMPRAR
                   </button>
                 </a>
-                <a
-                href="noah.html"
-                style="text-decoration: none;"
-              >
-                <button
-                  class="btn btn-personalizado flex-shrink-0"
-                  type="button"
-                  style="
+                <a href="noah.html" style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                     background-color: #6e9dbf; 
                     color: white; 
                     border: none; 
@@ -309,39 +253,32 @@
                     font-size: 0.8rem; 
                     height: auto; 
                     width: auto;
-                  "
-                  onmouseover="this.style.backgroundColor='#546679';"
-                  onmouseout="this.style.backgroundColor='#6e9dbf';"
-                >
-                  <i class="bi bi-bag-fill me-1"></i>
-                  SAIBA MAIS
-                </button>
-              </a>
-                    
-                  
-                
-              
+                  " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    SAIBA MAIS
+                  </button>
+                </a>
+
+
+
+
               </div>
               <div class="col-sm-9 col-md-5 cube-classic-wrap">
                 <span class="d-inline-block wow fadeInLeft"><img src="images/arttt.png" alt="" /> </span>
-                <p class="wow fadeInRight" >
-                  <h2 style="margin-top: 10px; font-size: 1.8rem">
-                    <span class="d-inline-block wow fadeInLeft">The art </span>
-                    <span class="text-primary d-inline-block wow fadeInRight">BOOK</span>
-                  </h2> 
-                  
-                  Coletânea visual que explora a criatividade do artista por meio de ilustrações únicas, fanarts marcantes e criações autorais inspiradas por temas diversos....
-                  
-                  <br> <br>
-               
-              <a
-              href="#"
-              style="text-decoration: none;"
-            >
-              <button
-                class="btn btn-personalizado flex-shrink-0"
-                type="button"
-                style="
+                <p class="wow fadeInRight">
+                <h2 style="margin-top: 10px; font-size: 1.8rem">
+                  <span class="d-inline-block wow fadeInLeft">The art </span>
+                  <span class="text-primary d-inline-block wow fadeInRight">BOOK</span>
+                </h2>
+
+                Coletânea visual que explora a criatividade do artista por meio de ilustrações únicas, fanarts marcantes
+                e criações autorais inspiradas por temas diversos....
+
+                <br> <br>
+
+                <a href="#" style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                   background-color: #6e9dbf; 
                   color: white; 
                   border: none; 
@@ -350,22 +287,14 @@
                   font-size: 0.8rem; 
                   height: auto; 
                   width: auto;
-                "
-                onmouseover="this.style.backgroundColor='#546679';"
-                onmouseout="this.style.backgroundColor='#6e9dbf';"
-              >
-                <i class="bi bi-bag-fill me-1"></i>
-                COMPRAR
-              </button>
-            </a>
-            <a
-            href="theart.html"
-            style="text-decoration: none;"
-          >
-            <button
-              class="btn btn-personalizado flex-shrink-0"
-              type="button"
-              style="
+                " onmouseover="this.style.backgroundColor='#546679';"
+                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    COMPRAR
+                  </button>
+                </a>
+                <a href="theart.html" style="text-decoration: none;">
+                  <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                 background-color: #6e9dbf; 
                 color: white; 
                 border: none; 
@@ -374,117 +303,91 @@
                 font-size: 0.8rem; 
                 height: auto; 
                 width: auto;
-              "
-              onmouseover="this.style.backgroundColor='#546679';"
-              onmouseout="this.style.backgroundColor='#6e9dbf';"
-            >
-              <i class="bi bi-bag-fill me-1"></i>
-              SAIBA MAIS
-            </button>
-          </a>
-                
-              
+              " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    <i class="bi bi-bag-fill me-1"></i>
+                    SAIBA MAIS
+                  </button>
+                </a>
+
+
               </div>
-              
-              
-               
-              </div>
-            </section>
-              
-             
-               
-              </div>
-            </section>
-           
-              
-          
-          
-            
-          
+
+
+
+            </div>
+          </section>
+
+
+
         </div>
-        
-      </section>
+    </section>
+
+
+
+
+
+
+  </div>
+
+  </section>
+  </div>
+  </div>
+  <!-- Page Footer-->
+  <footer
+    class="section footer-classic section-full section-full-1 section-sm section-inset-2 bg-gray-3 context-dark text-md-center"
+    id="contacts" style="background-color: #2c648c">
+    <div class="container">
+      <div class="footer-classic-list-social wow fadeInUp">
+        <ul class="list-inline list-social list-inline-sm">
+          <li style="
+                  border: 2px solid white;
+                  border-radius: 50%;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 50px;
+                  height: 50px;
+                ">
+            <a class="icon fa fa-youtube" href="https://www.youtube.com/@jhonbucks"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+          <li style="
+                  border: 2px solid white;
+                  border-radius: 50%;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 50px;
+                  height: 50px;
+                ">
+            <a class="icon fa fa-facebook" href="https://www.facebook.com/jhonbucksarte"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+          <li style="
+                  border: 2px solid white;
+                  border-radius: 50%;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 50px;
+                  height: 50px;
+                ">
+            <a class="icon fa fa-instagram" href="https://www.instagram.com/jhonbucks"
+              style="color: white; text-decoration: none; border: none"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="rights wow fadeInUp" style="color: white; text-decoration: none; border: none">
+        <span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Jhon
+          Bucks</span><span>.&nbsp;</span><span>Todos os direitos reservados.</span><br />Design&nbsp;by&nbsp;<a
+          href="https://www.templatemonster.com/">ZiboO Studios</a>
+      </p>
     </div>
-</div>
-      <!-- Page Footer-->
-      <footer
-        class="section footer-classic section-full section-full-1 section-sm section-inset-2 bg-gray-3 context-dark text-md-center"
-        id="contacts"
-        style="background-color: #2c648c"
-      >
-        <div class="container">
-          <div class="footer-classic-list-social wow fadeInUp">
-            <ul class="list-inline list-social list-inline-sm">
-              <li
-                style="
-                  border: 2px solid white;
-                  border-radius: 50%;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 50px;
-                  height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-youtube"
-                  href="https://www.youtube.com/@jhonbucks"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-              <li
-                style="
-                  border: 2px solid white;
-                  border-radius: 50%;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 50px;
-                  height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-facebook"
-                  href="https://www.facebook.com/jhonbucksarte"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-              <li
-                style="
-                  border: 2px solid white;
-                  border-radius: 50%;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 50px;
-                  height: 50px;
-                "
-              >
-                <a
-                  class="icon fa fa-instagram"
-                  href="https://www.instagram.com/jhonbucks"
-                  style="color: white; text-decoration: none; border: none"
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <p
-            class="rights wow fadeInUp"
-            style="color: white; text-decoration: none; border: none"
-          >
-            <span>&copy;&nbsp; </span><span class="copyright-year"></span
-            ><span>&nbsp;</span><span>Jhon Bucks</span><span>.&nbsp;</span
-            ><span>Todos os direitos reservados.</span
-            ><br />Design&nbsp;by&nbsp;<a
-              href="https://www.templatemonster.com/"
-              >ZiboO Studios</a
-            >
-          </p>
-        </div>
-      </footer>
-    </div>
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
