@@ -234,55 +234,157 @@
                  
                 </div> -->
 
-      <div class="row row-lg row-30">
-        <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
-          <article class="project-classic box-md">
-            <img src="images/project-1-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
-          <article class="project-classic box-md">
-            <img src="images/project-2-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 wow blurIn">
-          <article class="project-classic box-md">
-            <img src="images/project-3-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 wow blurIn">
-          <article class="project-classic box-md">
-            <img src="images/project-4-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
-          <article class="project-classic box-md">
-            <img src="images/project-5-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
-          <article class="project-classic box-md">
-            <img src="images/project-6-370x262.jpg" alt="" width="370" height="262" />
-            <div class="project-classic-caption">
-
-            </div>
-          </article>
-        </div>
+                <div class="row row-lg row-30">
+                  <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
+                    <article class="project-classic box-md">
+                      <img src="images/project-1-370x262.jpg" alt="Projeto 1" />
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
+                    <article class="project-classic box-md">
+                      <img src="images/project-2-370x262.jpg" alt="Projeto 2" />
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-md-4 wow blurIn">
+                    <article class="project-classic box-md">
+                      <img src="images/project-3-370x262.jpg" alt="Projeto 3" />
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-md-4 wow blurIn">
+                    <article class="project-classic box-md">
+                      <img src="images/project-4-370x262.jpg" alt="Projeto 4" />
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
+                    <article class="project-classic box-md">
+                      <img src="images/project-5-370x262.jpg" alt="Projeto 5" />
+                    </article>
+                  </div>
+                  <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
+                    <article class="project-classic box-md">
+                      <img src="images/project-6-370x262.jpg" alt="Projeto 6" />
+                    </article>
+                  </div>
+                
+                  <!-- Modal -->
+                  
+                  <div id="imageModal" class="modal" style="display: none; justify-content: center; margin-top: 60px; align-items: center; height: 100vh;">
+                    <div class="modal-content" style="text-align: center;">
+                        <h2 id="modalTitle" style="margin-bottom: 10px;">Título da Imagem</h2>
+                        <img id="modalImage" src="" alt="" />
+                        <p id="modalText" style="font-size: 1.2rem;">Descrição da imagem vai aqui.</p>
+                        <button class="close-btn btn btn-personalizado" type="button" 
+                            style="
+                                background-color: #6e9dbf;
+                                color: #ffffff;
+                                border: none;
+                                padding: 10px 10px;
+                                cursor: pointer;
+                                transition: background-color 0.3s;
+                                font-size: 1rem;
+                                margin: 20px auto;
+                            "
+                            onmouseover="this.style.backgroundColor='#546679';"
+                            onmouseout="this.style.backgroundColor='#6e9dbf';">
+                            <i class="bi bi-bag-fill me-1"></i>Fechar
+                        </button>
+                    </div>
+                </div>
+                    
+                </div>
+                
+                
+                  <style>
+                    /* Estilo para o modal */
+                    .modal {
+                      display: none;
+                      position: fixed;
+                      z-index: 1000;
+                      left: 0;
+                      top: 0;
+                      width: 100%;
+                      height: 100%;
+                      overflow: auto;
+                      background-color: rgba(0, 0, 0, 0.8);
+                    }
+                
+                    .modal-content {
+                      margin: 10% auto;
+                      padding: 20px;
+                      background: #fff;
+                      width: 80%;
+                      max-width: 600px;
+                      border-radius: 8px;
+                      text-align: center;
+                    }
+                
+                    /* Botão de fechar */
+                    .close-btn {
+                      background-color: #7baac4;
+                      color: #fff;
+                      border: none;
+                      padding: 10px 20px;
+                      font-size: 16px;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      margin-bottom: 20px;
+                    }
+                
+                    .close-btn:hover {
+                      background-color: #5f8ca5;
+                    }
+                
+                    .modal img {
+                      width: 100%;
+                      max-height: 300px;
+                      object-fit: cover;
+                    }
+                  </style>
+                
+                  <script>
+                    // Lógica para abrir o modal ao clicar em uma imagem
+                    const images = document.querySelectorAll(".project-classic img");
+                    const modal = document.getElementById("imageModal");
+                    const modalImage = document.getElementById("modalImage");
+                    const modalTitle = document.getElementById("modalTitle");
+                    const modalText = document.getElementById("modalText");
+                    const closeBtn = document.querySelector(".close-btn");
+                
+                    // Informações para cada imagem (editável)
+                    const imageDetails = [
+                      { title: "Fanart Wolfwalkers", text: "Fanart do filmeWolfwalkers é um filme animado de fantasia e de aventura dirigido por Tomm Moore e Ross Stewart." },
+                      { title: "Astronauta", text: "Desenhado a lápis HB e colorido em digital com PaintToo Sai " },
+                      { title: "Personagens", text: "Primeiros estudos de personagens do livro Noah e o Senhor das Almas, feito totalmente em digital." },
+                      { title: "A Menina e o Balanço", text: "Desenhado com lápis HB e colorido no digital usando PaintToo Sai." },
+                      { title: "Fanart Dragon Ball", text: "Fanart do personagem de Dragon Ball, Originalmente iniciada com uma série de mangá escrita e ilustrada por Toriyama." },
+                      { title: "Fanart Divertidamente", text: "Fanart dos personagens do filme Divertidamente, da Disney e da Pixar. " },
+                    ];
+                
+                    // Adicionar evento de clique a cada imagem
+                    images.forEach((image, index) => {
+                      image.addEventListener("click", () => {
+                        modal.style.display = "block";
+                        modalImage.src = image.src;
+                        modalTitle.innerText = imageDetails[index].title;
+                        modalText.innerText = imageDetails[index].text;
+                      });
+                    });
+                
+                    // Fechar o modal
+                    closeBtn.addEventListener("click", () => {
+                      modal.style.display = "none";
+                    });
+                
+                    // Fechar modal ao clicar fora da janela
+                    window.addEventListener("click", (event) => {
+                      if (event.target === modal) {
+                        modal.style.display = "none";
+                      }
+                    });
+                  </script>
+                </div>
+                
+                
       </div>
     </div>
   </section>
