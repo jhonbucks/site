@@ -211,22 +211,56 @@
           <h2 style="margin-top: 30px;">
             <span class="d-inline-block wow fadeInLeft">Meus</span>
             <span class="text-primary d-inline-block wow fadeInRight">livros</span>
-          </h2> <br>
+          </h2>
+    
+          <!-- Adicionando o buscador simples -->
+          <div style="margin: 20px 0;">
+            <form style="display: flex; justify-content: center;" onsubmit="return false;">
+              <input 
+                id="searchInput" 
+                type="text" 
+                placeholder="Buscar livro..." 
+                onkeyup="filterBooks()" 
+                style="
+                  padding: 10px;
+                  font-size: 1rem;
+                  width: 50%;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                ">
+              <button 
+                type="button" 
+                onclick="filterBooks()" 
+                style="
+                  background-color: #6e9dbf; 
+                  color: white; 
+                  border: none; 
+                  padding: 10px 20px; 
+                  margin-left: 10px; 
+                  border-radius: 5px;
+                  font-size: 1rem;
+                " 
+                onmouseover="this.style.backgroundColor='#546679';"
+                onmouseout="this.style.backgroundColor='#6e9dbf';">
+                Buscar
+              </button>
+            </form>
+          </div>
+    
+          <br>
           <section id="artbookdigital">
-            <div class="row row-30 justify-content-center">
-              <div class="col-sm-9 col-md-5 cube-classic-wrap">
+            <div id="bookContainer" class="row row-30 justify-content-center">
+              <!-- Primeiro livro -->
+              <div class="col-sm-9 col-md-5 cube-classic-wrap book-item">
                 <span class="d-inline-block wow fadeInLeft"><img src="images/noaaah.png" alt="" /> </span>
                 <p class="wow fadeInRight">
-                <h2 style="margin-top: 10px; font-size: 1.8rem">
+                <h2 class="book-title" style="margin-top: 10px; font-size: 1.8rem">
                   <span class="d-inline-block wow fadeInLeft">Noah e o </span>
                   <span class="text-primary d-inline-block wow fadeInRight">Senhor das Almas</span>
                 </h2>
-
                 Em um mundo onde a escuridão não é apenas uma sombra, mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no povoado de Nortreus....
-
-                <br> <br>
-                <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
-                  style="text-decoration: none;">
+                <br><br>
+                <a href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P" style="text-decoration: none;">
                   <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                       background-color: #6e9dbf; 
                       color: white; 
@@ -236,8 +270,7 @@
                       font-size: 0.8rem; 
                       height: auto; 
                       width: auto;
-                    " onmouseover="this.style.backgroundColor='#546679';"
-                    onmouseout="this.style.backgroundColor='#6e9dbf';">
+                    " onmouseover="this.style.backgroundColor='#546679';" onmouseout="this.style.backgroundColor='#6e9dbf';">
                     <i class="bi bi-bag-fill me-1"></i>
                     COMPRAR
                   </button>
@@ -258,24 +291,19 @@
                     SAIBA MAIS
                   </button>
                 </a>
-
-
-
-
               </div>
-              <div class="col-sm-9 col-md-5 cube-classic-wrap">
+    
+              <!-- Segundo livro -->
+              <div class="col-sm-9 col-md-5 cube-classic-wrap book-item">
                 <span class="d-inline-block wow fadeInLeft"><img src="images/arttt.png" alt="" /> </span>
                 <p class="wow fadeInRight">
-                <h2 style="margin-top: 10px; font-size: 1.8rem">
+                <h2 class="book-title" style="margin-top: 10px; font-size: 1.8rem">
                   <span class="d-inline-block wow fadeInLeft">The art </span>
                   <span class="text-primary d-inline-block wow fadeInRight">BOOK</span>
                 </h2>
-
                 Coletânea visual que explora a criatividade do artista por meio de ilustrações únicas, fanarts marcantes
                 e criações autorais inspiradas por temas diversos....
-
-                <br> <br>
-
+                <br><br>
                 <a href="https://hotmart.com/pt-br/marketplace/produtos/the-art-book/W97175302W" style="text-decoration: none;">
                   <button class="btn btn-personalizado flex-shrink-0" type="button" style="
                   background-color: #6e9dbf; 
@@ -307,19 +335,29 @@
                     SAIBA MAIS
                   </button>
                 </a>
-
-
               </div>
-
-
-
             </div>
           </section>
-
-
-
         </div>
+      </div>
     </section>
+    
+    <script>
+      function filterBooks() {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        const bookItems = document.querySelectorAll(".book-item");
+        
+        bookItems.forEach(book => {
+          const title = book.querySelector(".book-title").innerText.toLowerCase();
+          if (title.includes(searchInput)) {
+            book.style.display = "block";
+          } else {
+            book.style.display = "none";
+          }
+        });
+      }
+    </script>
+    
 
 
 
